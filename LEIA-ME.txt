@@ -1,0 +1,10 @@
+SITE BELLA BEAUTY
+=================
+Tudo que muda fica no bloco CONFIG no topo de js/main.js:
+nome, WhatsApp, Instagram, endereço, serviços, tabela de preços, galeria, textos, depoimentos e perguntas.
+
+FOTOS: coloque em assets/images/ e troque o caminho no CONFIG (imagens, servicos e galeria).
+LOGO: assets/images/logo.png (PNG com fundo transparente).
+CORES: variáveis no início de css/style.css.
+MAPA: no mapaEmbed, troque o endereço depois de ?q= (use + no lugar dos espaços).
+Mantenha as pastas css, js e assets ao lado do index.html.

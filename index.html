@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bella Beauty: extensão de cílios, unhas postiças, sobrancelhas e tranças em Taboão da Serra. Atendimento com hora marcada.">
+<meta name="theme-color" content="#0B0B0B">
+<title>Bella Beauty | Cílios, unhas, sobrancelhas e tranças</title>
+<link rel="icon" href="assets/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <div class="wrap bar">
+    <a class="logo" href="#inicio"><img src="assets/images/logo.png" alt="Logo Bella Beauty" width="52" height="52"><span data-cfg="nome"></span></a>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    <nav id="nav" class="nav" aria-label="Menu principal">
+      <a href="#servicos">Serviços</a><a href="#valores">Valores</a><a href="#galeria">Trabalhos</a><a href="#sobre">Sobre</a><a href="#faq">Dúvidas</a>
+      <a class="btn btn-sm" data-wa href="#">Agendar</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <h1><span data-cfg="tituloInicio"></span> <em data-cfg="tituloDestaque"></em><span data-cfg="tituloFim"></span></h1>
+      <p class="lead" data-cfg="subtitulo"></p>
+      <div class="actions"><a class="btn" data-wa href="#">Agendar pelo WhatsApp</a><a class="btn btn-ghost" href="#valores">Ver valores</a></div>
+      <ul class="trust"><li>Atendimento em estúdio</li><li>Somente com hora marcada</li><li>Cuidado em cada detalhe</li></ul>
+    </div>
+    <div class="hero-art"><div class="slot hero-slot" data-slot="hero"></div>
+      <svg class="lashes" viewBox="0 0 200 80" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M10 70 Q100 -10 190 70"/><path d="M30 55 L18 38"/><path d="M50 40 L40 18"/><path d="M72 30 L66 6"/><path d="M100 26 L100 2"/><path d="M128 30 L134 6"/><path d="M150 40 L160 18"/><path d="M170 55 L182 38"/></g></svg></div>
+  </div>
+</section>
+<section class="sec" id="servicos"><div class="wrap">
+  <div class="head"><h2>Nossos serviços</h2><p>Escolha o que combina com você e agende pelo WhatsApp.</p></div>
+  <div class="services" id="lista-servicos"></div></div></section>
+<section class="sec alt" id="valores"><div class="wrap">
+  <div class="head"><h2>Tabela de valores</h2><p>Preços por serviço. Confirme sempre no agendamento.</p></div>
+  <div class="prices" id="lista-precos"></div>
+  <p class="note" data-cfg="avisoPrecos"></p></div></section>
+<section class="sec" id="galeria"><div class="wrap">
+  <div class="head"><h2>Nossos trabalhos</h2><p>Um pouco do que fazemos no estúdio.</p></div>
+  <div class="gallery" id="lista-galeria"></div></div></section>
+<section class="sec alt" id="sobre"><div class="wrap about">
+  <div class="slot about-slot" data-slot="sobre"></div>
+  <div><h2 data-cfg="sobreTitulo"></h2><div id="sobre-textos"></div>
+  <ul class="ticks" id="lista-diferenciais"></ul><a class="btn" data-wa href="#">Quero agendar meu horário</a></div></div></section>
+<section class="sec" id="depoimentos"><div class="wrap">
+  <div class="head"><h2>Quem já se cuidou aqui</h2></div>
+  <div class="quotes" id="lista-depoimentos"></div></div></section>
+<section class="sec alt" id="faq"><div class="wrap narrow">
+  <div class="head"><h2>Perguntas frequentes</h2></div><div id="lista-faq"></div></div></section>
+<section class="sec" id="contato"><div class="wrap contact">
+  <div><h2>Vamos marcar seu horário?</h2><p data-cfg="endereco"></p>
+    <dl class="hours" id="lista-horarios"></dl>
+    <p><a class="link" id="link-insta" target="_blank" rel="noopener" href="#"></a></p>
+    <div class="map" id="mapa"></div></div>
+  <form class="form" id="form">
+    <label>Seu nome<input name="nome" required autocomplete="name" placeholder="Como posso te chamar?"></label>
+    <label>Serviço de interesse<select name="servico" id="select-servico"></select></label>
+    <label>Melhor dia e horário<input name="quando" placeholder="Ex.: sábado de manhã"></label>
+    <label>Mensagem (opcional)<textarea name="msg" rows="3" placeholder="Conte o que você deseja ou tire suas dúvidas"></textarea></label>
+    <button class="btn btn-wa" type="submit">Enviar pelo WhatsApp</button>
+    <p class="hint" id="hint">Ao enviar, o WhatsApp abre com a mensagem pronta.</p>
+  </form></div></section>
+</main>
+<footer class="footer"><div class="wrap foot"><a class="logo" href="#inicio"><img src="assets/images/logo.png" alt="" width="44" height="44"><span data-cfg="nome"></span></a><span>© <span id="ano"></span> Todos os direitos reservados</span><a href="#inicio">Voltar ao topo</a></div></footer>
+<a class="wa-float" data-wa href="#" aria-label="Falar no WhatsApp"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 4a12 12 0 0 0-10.3 18L4 28l6.2-1.6A12 12 0 1 0 16 4z"/><path fill="#25d366" d="M12.5 10c-.7 0-1.700 1-1.700 2.400 0 3.100 3.600 6.800 6.900 7.100 1.300.1 2.300-.9 2.300-1.700l-2.300-1.300-1.100 1.100c-1.600-.6-2.900-1.900-3.500-3.500l1.100-1.100z"/></svg></a>
+</body>
+</html>
